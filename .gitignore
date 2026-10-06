@@ -1,0 +1,7 @@
+target/
+credentials.json
+token-store/
+*.log
+.idea/
+*.iml
+
