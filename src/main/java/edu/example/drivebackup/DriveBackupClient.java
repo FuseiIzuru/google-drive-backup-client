@@ -34,7 +34,6 @@ import java.util.HexFormat;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 /** Backs up direct-child JPG files from one explicitly selected local directory. */
 public final class DriveBackupClient {
@@ -92,7 +91,7 @@ public final class DriveBackupClient {
                         .setFields("id,name,size,mimeType,webViewLink").execute();
 
                 entries.put(name, new ManifestEntry(uploaded.getId(), hash, size));
-                    saveManifest(drive, manifest, entries, options.folderId());
+                saveManifest(drive, manifest, entries, options.folderId());
                 uploadedCount++;
                 uploadedBytes += size;
                 System.out.printf("Uploaded %s (%d bytes), Drive id=%s%n", name, size, uploaded.getId());
