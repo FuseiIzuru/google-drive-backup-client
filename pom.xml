@@ -11,7 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <google.api.client.version>2.7.2</google.api.client.version>
         <google.oauth.client.version>1.39.0</google.oauth.client.version>
-        <google.drive.version>v3-rev20250826-2.0.0</google.drive.version>
+        <google.drive.version>v3-rev20250829-2.0.0</google.drive.version>
     </properties>
     <dependencies>
         <dependency>
